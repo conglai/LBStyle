@@ -5,13 +5,14 @@ LBStyle provides a way to customize label's tintColor for those components throu
 
 EXAMPLES:
 
-`
-UIActionSheet *action = [[UIActionSheet alloc]initWithTitle:nil delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:nil, nil];
+```objective-c
+  UIActionSheet *action = [[UIActionSheet alloc] initWithTitle:nil
+                                                      delegate:self
+                                             cancelButtonTitle:@"Cancel"
+                                        destructiveButtonTitle:nil
+                                             otherButtonTitles:nil, nil];
+  NSString* editString = @"Edit";
+  editString.lb_tintColor = [UIColor greenColor]; //extended property for color
+  [action addButtonWithTitle:editString];
 
-NSString* editString = @"Edit";
-
-editString.lb_tintColor = [UIColor greenColor];
-
-[action addButtonWithTitle:editString];
-
-`
+```
